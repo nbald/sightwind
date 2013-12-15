@@ -504,7 +504,8 @@ function load_data_from_img (varname) {
     }
     data_is_ready();
   };
-  img.src="data/data-"+varname+".png";
+  img.crossOrigin = '';
+  img.src="http://labo.ometfn.net/sightwind/data-"+varname+".png";
 }
 
 function data_is_ready() {
